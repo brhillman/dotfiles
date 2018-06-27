@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/gscratch/bhillma/spcam/cases/sp20-cosp.FSPCAMm.f19_f19.crm-tq/SourceMods/src.cam'
+let g:netrw_dirhist_2='/gscratch/bhillma/acme_scratch/cases/ecp-add-rrtmgp.FC5AV1C-04P2.ne4_ne4.rrtmg_debug/SourceMods/src.cam'
+let g:netrw_dirhist_3='/gscratch/bhillma/sam_cases/nsa_Jan2002_32x1x16'
+let g:netrw_dirhist_4='/home/bhillma/projects/acme-ecp/branches/brhillman/atm/add-rrtmgp/components/cam/src/physics/rrtmg'
+let g:netrw_dirhist_5='/gscratch/bhillma/acme_scratch/cases/ecp-add-rrtmgp.FC5AV1C-04P2.ne4_ne4.rrtmg_debug/SourceMods/src.cam'
+let g:netrw_dirhist_6='/home/bhillma/projects/acme-ecp/branches/brhillman/atm/add-rrtmgp/components/cam/src/physics/rrtmgp/external/rrtmgp'
