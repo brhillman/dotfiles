@@ -8,7 +8,7 @@ filetype off                " required
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 " alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
+"call vundle#begin('~/.vim/bundle/Vundle.vim')
 
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
@@ -16,11 +16,10 @@ Plugin 'VundleVim/Vundle.vim'
 " Plugins for better writting support
 Plugin 'reedes/vim-pencil'
 Plugin 'junegunn/goyo.vim'
-" Plugin 'vim-pandoc/vim-pandoc'
-Plugin 'vim-pandoc/vim-pandoc-syntax'
  
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
+
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -60,3 +59,5 @@ autocmd FileType c setlocal shiftwidth=8 tabstop=8
 
 " Tell vim that *.pf files should be read as FORTRAN
 au BufRead *.pf set syntax=fortran
+
+set mouse=a
