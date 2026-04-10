@@ -1,18 +1,17 @@
-#!/bin/bash
+#!/bin/sh
 
 git submodule update --init
 
-dotfiles=(.vimrc .vim .screenrc)
+dotfiles=".vimrc .vim .screenrc"
 
 echo "Backup existing files..."
-for file in ${dotfiles[@]}; do
-    if [ -e ${HOME}/${file} ]; then
-        #echo "${HOME}/${file} (do nothing)"
-        mv -v ${HOME}/${file} ${HOME}/${file}.backup
+for file in ${dotfiles}; do
+    if [ -e "${HOME}/${file}" ]; then
+        mv -v "${HOME}/${file}" "${HOME}/${file}.backup"
     fi
 done
 
 echo "Create symbolic links..."
-for file in ${dotfiles[@]}; do
-    ln -svf ${PWD}/${file} ${HOME}/${file}
+for file in ${dotfiles}; do
+    ln -svf "${PWD}/${file}" "${HOME}/${file}"
 done
